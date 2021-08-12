@@ -23,15 +23,15 @@ except:
 end = time.time()
 print(end - start)
 name = driver.find_element_by_name('linename')
-name.send_keys('黃意晶')
+name.send_keys('我是姓名')
 
 
 ID = driver.find_element_by_name('lineid')
-ID.send_keys('Q220030224')
+ID.send_keys('我是身分證')
 
 
 phone = driver.find_element_by_name('phone')
-phone.send_keys('0911176217')
+phone.send_keys('09XXXXXXXXX')
 
 types = driver.find_element_by_xpath("//*[@value='MD'][@name='rdo_bank']")
 driver.execute_script("arguments[0].click();", types)
